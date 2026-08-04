@@ -60,7 +60,7 @@ def _on_back(self, e=None):
 
 ## 代码位置
 
-[src/yttrium.py](../../src/yttrium.py) → `class LedPage(AppPage)`（第 121 行起）
+[src/led.py](../../src/led.py) → `class LedPage(AppPage)`
 
 ## 涉及模块
 

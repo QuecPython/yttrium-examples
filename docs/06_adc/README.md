@@ -26,13 +26,6 @@
 | 黄色（警告） | 240° ~ 300° | 1.65V ~ 3.3V | `0xFFEB3B` |
 | 红色（危险） | 300° ~ 360° | > 3.3V | `0xFF5252` |
 
-指针角度计算：
-```
-angle = 180° + (voltage / 3.3V) × 180°
-0V → 180°（最左）
-3.3V → 360°（最右）
-```
-
 ## 代码解析
 
 ### 1. 初始化 ADC
@@ -87,8 +80,6 @@ def _on_back(self, e=None):
 
 ## 完整数据流
 
-![数据流](images/adc-flow.png)
-
 1. `lv.timer` 每 300ms 触发 `_adc_tick`
 2. `ADC.read(ADC0)` × 6 次 → 取平均 raw
 3. `raw × scale` → 电压值 V
@@ -110,7 +101,7 @@ ADC0 测试点在板上有引出（参考 `datasheet/` 原理图 Sheet 7）。EG
 
 ## 代码位置
 
-[src/yttrium.py](../../src/yttrium.py) → `class AdcPage(AppPage)`（第 429 行起）
+[src/adc.py](../../src/adc.py) → `class AdcPage(AppPage)`
 
 ## 涉及模块
 

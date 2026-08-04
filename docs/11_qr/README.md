@@ -155,7 +155,7 @@ def _do_pay(self):
 
 ## 代码位置
 
-[src/yttrium.py](../../src/yttrium.py) → `class QrPage(AppPage)`（第 1008 行起）
+[src/qr_shop.py](../../src/qr_shop.py) → `class QrPage(AppPage)`
 
 ## 涉及模块
 

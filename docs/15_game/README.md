@@ -150,7 +150,7 @@ GamePage(AppPage)
 
 ## 代码位置
 
-[src/yttrium.py](../../src/yttrium.py)
+[src/game_hub.py](../../src/game_hub.py) — Hub，[src/snake.py](../../src/snake.py) / [src/game_2048.py](../../src/game_2048.py) / [src/tetris.py](../../src/tetris.py)
 
 | 类 | 行号 | 说明 |
 |---|---|---|

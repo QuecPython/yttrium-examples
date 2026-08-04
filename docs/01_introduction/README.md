@@ -144,7 +144,7 @@ Yttrium 开发板基于 **Quectel EG800Z QuecOpen** 模组（EC718 系列），�
 | 固件包 | `firmware/` |
 | 烧录工具 | `tools/FlashTools_V4.1.19_2509010.zip` |
 | 串口工具 | `tools/sscom5.13.1.zip` |
-| Demo 代码 | `src/yttrium.py` |
+| Demo 代码 | `src/_main.py` + 各功能模块 `.py` |
 | 图标资源 | `icons/`、`images/` |
 | 烧录教程 | [02_firmwareFlashing](../02_firmwareFlashing/README.md) |
 | 运行教程 | [03_runDemo](../03_runDemo/README.md) |

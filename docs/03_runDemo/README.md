@@ -9,7 +9,7 @@
 | 开发板 | 已烧录 QuecPython 固件（参考 [02_firmwareFlashing](../02_firmwareFlashing/README.md)） |
 | PC 工具 | QPYCOM（QuecPython 串口交互工具） |
 | 硬件连接 | 开发板通过 USB 线连接至 PC |
-| 代码文件 | `src/yttrium.py` + `icons/` + `images/` |
+| 代码文件 | `src/` 下所有 `.py` 文件 + `icons/` + `images/` |
 
 ## QPYCOM 连接设备
 
@@ -65,13 +65,40 @@ hello world
 
 ```
 U:/
-├── yttrium.py       # 主应用
+├── _main.py         # 入口文件（PAGE_MAP + MainScreen + YttriumApp）
+├── app_base.py      # AppPage 基类
+├── led.py           # LED 控制
+├── clock.py         # 时钟
+├── adc.py           # ADC 仪表盘
+├── calc.py          # 计算器
+├── comm_hub.py      # 通信协议 Hub
+├── uart.py          # UART 终端
+├── can.py           # CAN 终端
+├── at.py            # AT 终端
+├── rs485.py         # RS485 终端
+├── game_hub.py      # 游戏 Hub
+├── snake.py         # 贪吃蛇
+├── game_2048.py     # 2048
+├── tetris.py        # 俄罗斯方块
+├── qr_shop.py       # 饮品选购
+├── audio.py         # 录音播放
+├── usb_browser.py   # U 盘浏览器
+├── phone.py         # 电话拨号
+├── eth_hub.py       # 以太网 Hub
+├── eth_info.py      # 网络信息
+├── ping.py          # Ping 工具
+├── tcp.py           # TCP 客户端
+├── buzzer.py        # 蜂鸣器
+├── weather.py       # 天气
+├── keyboard.py      # 虚拟键盘
+├── camera.py        # 摄像头
+├── scan.py          # 扫码
 ├── icons/           # 图标资源（48×48 PNG，~50 个）
 └── images/          # 商品图片（100×70，8 张）
 ```
 
 ## 启动 Demo
-- 直接右键yttrimu.py运行代码
+- 直接右键 `_main.py` 运行代码
 
 ![alt text](image-6.png)
 
@@ -79,7 +106,7 @@ U:/
 
 ```python
 >>> import example
->>> example.exec('/usr/yttrium.py')
+>>> example.exec('/usr/_main.py')
 ```
 
 开发板 LCD 将显示 **YttriumEC718** 主界面——5×3 图标网格，触摸点击进入各功能页面。
