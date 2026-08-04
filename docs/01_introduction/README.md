@@ -55,7 +55,7 @@ Yttrium 开发板基于 **Quectel EG800Z QuecOpen** 模组（EC718 系列），�
 | UART | Main UART（TX/RX/RTS/CTS/DTR/DCD/RI）、Debug UART |
 | I2C | I2C0 总线（连接触摸、Camera 等） |
 | SPI | SPI0（以太网/Flash 切换）、LCD SPI、Camera SPI |
-| SIM | 双 SIM 卡槽（USIM1 + USIM2） |
+| SIM | 单 SIM 卡槽（USIM1，USIM2 仅预留引脚） |
 
 ### 其他外设
 

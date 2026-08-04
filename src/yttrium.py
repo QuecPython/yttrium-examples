@@ -2823,7 +2823,7 @@ class ScanPage(AppPage):
 
 class BuzzerPage(AppPage):
     """蜂鸣器：Beep 短响 / On-Off 持续响。脚位确认后填 PIN_BUZZER 即可真响。"""
-    PIN_BUZZER = None    # TODO: 确认 BEEP/LED 网络对应的模块引脚号后填，如 Pin.GPIOxx
+    PIN_BUZZER = Pin.GPIO2    # GPIO2 → Q0701 → BUZ0701
 
     def _create_content(self):
         base_y = self.content_y
