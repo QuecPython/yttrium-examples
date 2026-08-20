@@ -1,4 +1,4 @@
-# YttriumEC718
+# Yttrium大屏开发板
 
 基于 **QuecPython + LVGL** 的 Quectel EC718 开发板综合 Demo 应用，480×320 横屏触控界面。
 
@@ -13,12 +13,7 @@
 
 ## 部署
 
-将 `src/yttrium.py` 和 `icons/`、`images/` 目录放到设备 `U:/` 根目录，通过 REPL 启动：
-
-```python
-import example
-example.exec('/usr/yttrium.py')
-```
+将 `src/*.py` 和 `icons/`、`images/` 目录使用QPYCom放到设备 `/usr` 根目录，右键_main.py运行代码：
 
 ## 功能清单
 
